@@ -3,7 +3,7 @@ import app from './app';
 
 const PORT = parseInt(process.env.PORT || '3001', 10);
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT,'0.0.0.0', () => {
   console.log(`🚀 Mockup Studio AI server running on http://localhost:${PORT}`);
   console.log(`   Environment: ${process.env.NODE_ENV || 'development'}`);
   
