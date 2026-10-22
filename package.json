@@ -1,0 +1,23 @@
+{
+  "name": "mockup-studio-ai-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Product Mockup & Advertising Studio using Stability AI",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "test:server": "npm --prefix server test",
+    "test": "npm run test:server",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "stability-ai",
+    "image-generation",
+    "product-mockup",
+    "advertising",
+    "ecommerce"
+  ],
+  "author": "",
+  "license": "ISC"
+}
