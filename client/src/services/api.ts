@@ -7,9 +7,14 @@ import type {
   ModelOption,
 } from '../types';
 
+// const api = axios.create({
+//   baseURL: '/api',
+//   timeout: 130_000, // slightly longer than server timeout
+// });
+
 const api = axios.create({
-  baseURL: '/api',
-  timeout: 130_000, // slightly longer than server timeout
+  baseURL: `${import.meta.env.VITE_API_BASE_URL || ''}/api`,
+  timeout: 130_000,
 });
 
 export async function generateImage(
